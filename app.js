@@ -1,8 +1,29 @@
 
 pedido();
-function pedido(params) {
-    
+function pedido() {
+    switch (prompt('cual es tu pedido?')) {
+        case 'ceviche':
+            alert('que haces! no hay');
+            break;
+            
+        case 'tacos al pastor':
+            alert('tampoco!')
+            break;
+
+        case 'empanada chilena':
+            alert('uy! se agoto')
+            break;
+
+        case 'hamburguesa':
+            alert('hey! ese si, orden lista :D')
+            break;
+        default:
+            alert('lo sentimos no encontramos ese plato')
+           break;
+    }
+
 }
+
 // fail switch
 // switch (prompt('Que va a ordenar?')) {
     //     case 'ceviche':
